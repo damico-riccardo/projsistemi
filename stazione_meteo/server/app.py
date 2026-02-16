@@ -349,5 +349,7 @@ def aggiorna_dati_simulati():
 # =====================
 if __name__ == "__main__":
     Thread(target=aggiorna_dati_simulati, daemon=True).start()
-    app.run(debug=True)
+    app.run(host="0.0.0.0", port=10000)
+
+
 
